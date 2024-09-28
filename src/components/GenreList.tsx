@@ -27,7 +27,9 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
         Genres
       </Heading>
       <List>
+        
         {isLoading && <Spinner />}
+
         {data.map((genre) => (
           <ListItem key={genre.id} paddingY="5px">
             <HStack>
