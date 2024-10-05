@@ -3,14 +3,9 @@ import ms from "ms";
 import platforms from "../data/platforms";
 import APIClient from "../services/api-client";
 import { CACHE_KEY_PLATFORMS } from "../services/constants";
+import { Platform } from "../entities/Platform";
 
 const apiClient = new APIClient<Platform>("/platforms/lists/parents");
-
-export interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
 
 // const usePlatforms = () => useData<Platform>("/platforms/lists/parents");
 
